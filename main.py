@@ -66,6 +66,8 @@ class Comment(db.Model, Base):
     post = relationship("BlogPost", back_populates="comments")  # Now its a object User
 
 
+db.create_all()
+
 # Gravatar
 
 gravatar = Gravatar(app,
